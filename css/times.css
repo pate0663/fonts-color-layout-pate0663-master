@@ -1,0 +1,220 @@
+/* 
+author: Dipen Patel;
+filename: times.css;
+Date: The Date which you will submit;
+*/
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Niramit');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+s html {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Noto Sans', sans-serif;
+
+    /*font-family: font stack required for body text */
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    /*font-family: font stack required for headings */
+    font-style: italic;
+    font-size: 2rem;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Niramit', sans-serif;
+    margin-top: 2rem;
+}
+
+body {
+    margin: 20px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    border: 2px solid blue;
+    font-size: 1.2rem;
+    color: hsla(351, 100%, 57%, 1);
+    background: hsla(210, 50%, 50%, 1);
+}
+
+p {
+    padding: 10px;
+    font-size: 1rem;
+
+}
+
+.container {
+    max-width: 1500px;
+    font-size: 1rem;
+}
+
+/* For smaller screen */
+@media only screen and (max-width: 600px) {
+    .container {
+        background: hsla(200, 50%, 100%, 1);
+    }
+}
+
+/* For bigger screen then mobile */
+@media only screen and (min-width: 600px) {
+    .container {
+        background: hsla(120, 50%, 40%, 1);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        background: hsla(200, 50%, 100%, 1);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        background: hsla(20, 100%, 60%, 1);
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .container {
+        background: hsla(200, 50%, 100%, 1);
+    }
+}
+
+.subnav {
+    display: flex;
+    justify-content: flex-end;
+    border: 1;
+    background: hsla(100, 100%, 80%, 1);
+}
+
+
+.subnav a {
+    padding: 10px;
+}
+
+.mainnav {
+    display: flex;
+    justify-content: space-around;
+    color: hsla(200, 50%, 10%, 1);
+
+}
+
+.mainnav a {
+    color: hsl(360, 100%, 100%, 1);
+    flex-wrap: wrap;
+}
+
+.mainnav a:nth-child(1):hover,
+.mainnav a:nth-child(2):hover,
+.mainnav a:nth-child(3):hover,
+.mainnav a:nth-child(4):hover {
+    background-color: hsl(311, 49%, 49%, 1);
+    color: hsl(360, 100%, 100%, 1);
+    font-weight: bolder;
+
+
+}
+
+.masthead {}
+
+.times-logo {
+    width: 100%;
+    height: auto;
+    background-color: hsl(311, 49%, 49%, 1);
+
+
+
+}
+
+.masthead h1 {
+    background: hsla(100, 100%, 80%, 1);
+}
+
+.content {}
+
+.content .story {}
+
+.story.lead-story {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+h1.story-title {
+
+    color: hsla(290, 10%, 10%, 1);
+    font-size: 2 rem;
+    background-color: hsla(100, 50%, 50%, 1)
+}
+
+.story-img {
+    display: flex;
+    margin: 10px;
+    max-width: 100%;
+    border: 5px solid #111;
+    flex-wrap: wrap;
+}
+
+.story p {
+    padding: 10px;
+}
+
+.story blockquote {
+    quotes: "\201E""\201D";
+    text-align: center;
+    border: 10px;
+    color: hsla(351, 100%, 57%, 1);
+}
+
+.story blockquote::before {
+    /*    content: open-quote;*/
+    content: "“";
+    /* Real curly quotes */
+    font-size: 1.4rem;
+    color: blue;
+}
+
+.story blockquote::after {
+    /*    content: close-quote;*/
+    content: "”";
+    /*     Real curly quotes */
+    font-size: 1.4rem;
+    color: hsla(247, 83%, 43%, 1);
+
+
+}
+
+.story p.byline {
+    color: hsl(311, 49%, 49%);
+
+}
+
+p.byline span.author {}
+
+p.byline span.pub {}
+
+.foot {
+    background-color: hsl(0, 10%, 10%);
+    padding: 0.5px;
+    text-align: center;
+}
+
+.foot p {
+    color: hsl(360, 100%, 100%);
+    font-size: 1rem;
+    font-weight: bolder;
+
+}
